@@ -27,4 +27,7 @@ public class ItemService {
     }
 
 
+    public String deleteAllItems() {
+        return itemRepository.deleteAllItems();
+    }
 }
