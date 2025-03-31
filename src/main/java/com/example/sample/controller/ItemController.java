@@ -33,5 +33,9 @@ public class ItemController {
     public List<Item> getAllItems(){
         return itemService.getAllItems();
     }
+    @DeleteMapping("/deleteAllItems")
+    public String deleteAllItems(){
+        return itemService.deleteAllItems();
+    }
 
 }

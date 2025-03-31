@@ -34,4 +34,12 @@ public class ItemRepository {
         }
         return items;
     }
+
+    public String deleteAllItems() {
+        if(itemMap.isEmpty()){
+            return "Already Empty";
+        }
+        itemMap.clear();
+        return "Cleared";
+    }
 }
